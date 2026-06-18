@@ -64,9 +64,9 @@
             document.getElementById("tabel-body").innerHTML = bodyHtml;
             
         } catch (error) {
-            console.error("Gagal mengambil data:", error);
-            document.getElementById("tabel-body").innerHTML = `<tr><td colspan="5" class="text-center text-danger">Gagal memuat data dari Google Sheets. Pastikan link sudah benar.</td></tr>`;
-        }
+        console.error("Gagal mengambil data:", error);
+        document.getElementById("tabel-body").innerHTML = "<tr><td colspan='5' class='text-center text-danger'>Gagal memuat data dari Google Sheets. Pastikan link sudah benar.</td></tr>";
+    }
     }
 
     // Jalankan fungsi saat halaman web dibuka
